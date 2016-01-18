@@ -1,0 +1,42 @@
+<!--
+ -  manifest.xml
+ -
+ -  Copyright (c) 2013, Centre for Intelligent Mechatronics Systems, University of Technology, Sydney, Australia.
+ -  All rights reserved.
+ -
+ -  This software was developed as a part of an industry based research project on Assistive Robotic Devices.
+ -
+ -  Author: Bojan Andonovski
+ -  Date: 25/01/2013
+ -
+ -  Rev History:
+ -       0.0 - Bojan Andonovski
+-->
+
+<package>
+  <description brief="pow_gui">
+
+     A QT based Gui panel for the Hoist
+
+  </description>
+  <author>liyang</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/pow_gui</url>
+
+
+  <rosdep name="qt4"/>
+
+  <!-- rosbuild1 -->
+  <depend package="qt_build"/>
+  <depend package="roscpp"/>
+  <depend package="sensor_msgs"/>
+  <depend package="image_transport"/>
+  <depend package="sensor_msgs"/>
+  <depend package="cv_bridge"/>
+  
+  <rosbuild2>
+    <depend package="qt_build"/>
+    <depend package="roscpp"/>
+  </rosbuild2>
+  </package>
